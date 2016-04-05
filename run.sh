@@ -6,7 +6,7 @@ KIBANA_CONF_FILE="/opt/kibana-${KIBANA_VERSION}/config/kibana.yml"
 
 KIBANA_ES_URL=${KIBANA_ES_URL:-http://elasticsearch:9200}
 
-sed -i "s;^elasticsearch.url:.*;elasticsearch.url: ${KIBANA_ES_URL};" "${KIBANA_CONF_FILE}"
+sed -i "s;^# elasticsearch.url:.*;elasticsearch.url: ${KIBANA_ES_URL};" "${KIBANA_CONF_FILE}"
 
 if [ -n "${KIBANA_INDEX}" ]; then
     echo "setting index!"
