@@ -1,5 +1,6 @@
 FROM alpine:edge
 
+
 ENV KIBANA_VERSION 4.5.0-linux-x64
 
 RUN apk --update add curl && \
