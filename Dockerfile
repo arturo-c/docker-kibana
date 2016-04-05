@@ -1,4 +1,4 @@
-FROM janeczku/alpine-kubernetes:3.3
+FROM alpine:edge
 
 ENV KIBANA_VERSION 4.5.0-linux-x64
 
